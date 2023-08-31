@@ -13,6 +13,14 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- LINK CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- TITLE -->
@@ -23,6 +31,30 @@
     <script src="./js/main.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <div id="app" class="wrapper"></div>
+    <div id="app" class="wrapper">
+      <div class="container">
+        <div class="header">
+          <h1 class="text-center">To do List</h1>
+        </div>
+        <main>
+          <ul>
+            <li class="d-flex">
+              <span
+                ><input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkboxNoLabel"
+                  value=""
+                  aria-label="..."
+              /></span>
+              <span>sdasd</span>
+              <span class="cross"
+                ><i class="fa-solid fa-xmark" style="color: #e60505"></i
+              ></span>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
   </body>
 </html>

@@ -8,3 +8,33 @@
 /* UTILS */
 
 /* STRUCTURE */
+.container {
+  width: 35%;
+}
+
+.header {
+  border-bottom: 2px double black;
+}
+
+.header h1 {
+  font-size: 5rem;
+}
+
+main > ul {
+  padding-left: 0;
+}
+
+ul > li {
+  list-style: none;
+  background-color: aquamarine;
+  font-size: 30px;
+  border-radius: 10px;
+
+  gap: 15px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.cross {
+  margin-left: auto;
+}
