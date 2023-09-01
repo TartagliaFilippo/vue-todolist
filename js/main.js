@@ -22,4 +22,9 @@ createApp({
       list,
     };
   },
+  methods: {
+    getCrossClass(index) {
+      this.items.text.classList.toggle("cross-text");
+    },
+  },
 }).mount("#app");

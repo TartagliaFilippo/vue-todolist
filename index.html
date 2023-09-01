@@ -38,16 +38,17 @@
         </div>
         <main>
           <ul>
-            <li class="d-flex">
+            <li v-for="(items, index) in list" class="d-flex">
               <span
                 ><input
+                  @click="getCrossClass(index)"
                   class="form-check-input"
                   type="checkbox"
                   id="checkboxNoLabel"
                   value=""
                   aria-label="..."
               /></span>
-              <span>sdasd</span>
+              <span id="mytext">{{ items.text }}</span>
               <span class="cross"
                 ><i class="fa-solid fa-xmark" style="color: #e60505"></i
               ></span>

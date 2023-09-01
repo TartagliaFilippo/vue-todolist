@@ -38,3 +38,7 @@ ul > li {
 .cross {
   margin-left: auto;
 }
+
+.cross-text {
+  text-decoration: line-through;
+}
