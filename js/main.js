@@ -2,7 +2,7 @@
 const list = [
   {
     text: "fare la spesa",
-    done: false,
+    done: true,
   },
   {
     text: "portare a spasso il cane",
@@ -23,8 +23,8 @@ createApp({
     };
   },
   methods: {
-    getCrossClass(index) {
-      document.getElementById("mytext").classList.toggle("cross-text");
+    deleteItem(index) {
+      this.list.splice(index, 1);
     },
   },
 }).mount("#app");

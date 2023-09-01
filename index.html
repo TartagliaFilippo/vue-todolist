@@ -37,23 +37,28 @@
           <h1 class="text-center">To do List</h1>
         </div>
         <main>
-          <ul>
+          <ul v-if="list.length > 0">
             <li v-for="(items, index) in list" class="d-flex">
               <span
                 ><input
-                  @click="getCrossClass(index)"
+                  @click="items.done.toggle() = true"
                   class="form-check-input"
                   type="checkbox"
                   id="checkboxNoLabel"
                   value=""
                   aria-label="..."
               /></span>
-              <span id="mytext">{{ items.text }}</span>
-              <span class="cross"
+              <span
+                id="mytext"
+                :class="(items.done == true) ? 'cross-text' : ''"
+                >{{ items.text }}</span
+              >
+              <span @click="deleteItem(index)" class="cross"
                 ><i class="fa-solid fa-xmark" style="color: #e60505"></i
               ></span>
             </li>
           </ul>
+          <h3 v-else>Nessun Elemento nella lista</h3>
         </main>
       </div>
     </div>
