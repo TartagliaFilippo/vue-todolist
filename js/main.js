@@ -24,7 +24,7 @@ createApp({
   },
   methods: {
     getCrossClass(index) {
-      this.items.text.classList.toggle("cross-text");
+      document.getElementById("mytext").classList.toggle("cross-text");
     },
   },
 }).mount("#app");
