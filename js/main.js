@@ -20,6 +20,7 @@ createApp({
   data() {
     return {
       list,
+      newTask: "",
     };
   },
   methods: {
@@ -33,6 +34,17 @@ createApp({
       } else {
         this.list[index].done = true;
       }
+    },
+
+    addNewTask(newTask) {
+      const newTaskObj = {
+        text: newTask,
+        done: false,
+      };
+
+      this.list.push(newTaskObj);
+
+      this.newTask = "";
     },
   },
 }).mount("#app");
