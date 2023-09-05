@@ -40,15 +40,7 @@
           <ul v-if="list.length > 0">
             <li v-for="(items, index) in list" class="d-flex">
               <span
-                ><input
-                  @click="items.done.toggle() = true"
-                  class="form-check-input"
-                  type="checkbox"
-                  id="checkboxNoLabel"
-                  value=""
-                  aria-label="..."
-              /></span>
-              <span
+                @click="addCrossClass(index)"
                 id="mytext"
                 :class="(items.done == true) ? 'cross-text' : ''"
                 >{{ items.text }}</span

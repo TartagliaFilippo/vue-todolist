@@ -26,5 +26,13 @@ createApp({
     deleteItem(index) {
       this.list.splice(index, 1);
     },
+
+    addCrossClass(index) {
+      if (this.list[index].done == true) {
+        this.list[index].done = false;
+      } else {
+        this.list[index].done = true;
+      }
+    },
   },
 }).mount("#app");
